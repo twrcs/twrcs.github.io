@@ -78,6 +78,7 @@ h1 {
 .main-content ul.expandable li .nested .banned-words { margin-top: 10px }
 .main-content ul.expandable li .nested .banned-words span {
     display: inline-block;
+    width: max-content;
     border-radius: 20px;
     background: #d5fdff;
     color: #202435;
