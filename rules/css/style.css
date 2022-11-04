@@ -73,7 +73,7 @@ h1 {
 .main-content ul.expandable li .title.active { font-weight: bold }
 .main-content ul.expandable li .title.active:after { transform: rotate(45deg) }
 .main-content ul.expandable li .title.active:before { transform: rotate(45deg) }
-.main-content ul.expandable li .nested { display: none; background: rgba(0, 0, 0, 0.3); padding: 15px 20px; margin-top: 10px }
+.main-content ul.expandable li .nested { display: none; background: rgba(0, 0, 0, 0.3); padding: 15px 20px; margin-top: 10px; animation: fadeEffect 1s }
 
 .main-content ul.expandable li .nested .banned-words { margin-top: 10px }
 .main-content ul.expandable li .nested .banned-words span {
