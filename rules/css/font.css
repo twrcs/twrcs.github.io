@@ -3,7 +3,7 @@
     src: url("../font/RockStar-Light.woff2") format("woff2"),
          url("../font/RockStar-Light.woff") format("woff");
     font-style: normal;
-    font-weight: regular;
+    font-weight: normal;
 }
 
 @font-face{
@@ -15,17 +15,16 @@
 }
 
 @font-face{
-    font-family: "Metro Nova";
-    src: url("../font/0beca509-b62a-49c5-bc79-57344e00c5ae.woff2") format("woff2"),
-         url("../font/969ff0b9-0f7c-4b65-a9c2-839849ffb133.woff") format("woff");
+    font-family: "Luba LT W04";
+    src: url("../font/f41f48e8-ce85-412c-b80d-8aeeff9ab014.woff2") format("woff2"),
+         url("../font/eae885c8-4a55-4c13-af84-704dbff1dde4.woff") format("woff");
     font-style: normal;
-    font-weight: regular;
+    font-weight: normal;
 }
-
 @font-face{
-    font-family: "Metro Nova";
-    src: url("../font/e0cadafe-af3d-4d26-bc6b-3e272ebfb87a.woff2") format("woff2"),
-         url("../font/a8179324-e684-440f-a7c4-42006055da74.woff") format("woff");
+    font-family: "Luba LT W04";
+    src: url("../font/07c01cb9-fea4-4e7b-933b-4d19a8f0889f.woff2") format("woff2"),
+         url("../font/82f0fd5e-5f5d-4f45-b520-bedfab1c9105.woff") format("woff");
     font-style: normal;
     font-weight: bold;
 }
