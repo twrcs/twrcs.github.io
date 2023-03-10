@@ -13,12 +13,19 @@ $(document).ready(function() {
     });
 
     $('.expandable span').click(function() {
-        $('.expandable span').each(function() {
-            $(this).siblings(".nested").hide();
-            $(this).removeClass("active");
-        });
-        $(this).siblings(".nested").toggle();
-        $(this).toggleClass("active");
+        if($(this).hasClass('active')) {
+            $('.expandable span').each(function() {
+                $(this).siblings(".nested").hide();
+                $(this).removeClass("active");
+            });
+        } else {
+            $('.expandable span').each(function() {
+                $(this).siblings(".nested").hide();
+                $(this).removeClass("active");
+            });
+            $(this).siblings(".nested").toggle();
+            $(this).toggleClass("active");
+        }
     });
 
     var list = "cock,c0ck,chink,chingchong,fagg0t,faggot,nigger,nigga,n1gger,n1gga,nig,ch1nk,kneegrow,negro,kneegro,pussy,retard,retarded,cum,sex,seggs,segs,sexx,seex,ssex,secks,seks,c@ck,cumm,ccum,penis,p3nis,pen1s,p3n1s,dick,dyke,cunt,kkk";
