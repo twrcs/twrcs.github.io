@@ -7,11 +7,11 @@
 
 /* Global */
 body {
-    background: #202435;
-    color: #d6d8e6;
-    font-family: "Metro Nova", sans-serif;
-    font-variant-ligatures: common-ligatures;
-    padding: 0 25%;
+    background: #131832;
+    color: #eaecf7;
+    font-family: "Luba LT W04", sans-serif;
+    font-feature-settings: "liga" 1, "lnum" 1, "dlig" 1;
+    padding: 0 28%;
 }
 
 b {
@@ -24,8 +24,15 @@ h1 {
     font-family: "Rockstar", sans-serif;
     font-size: 18pt;
     font-weight: bold;
+    letter-spacing: -0.5pt;
     padding-bottom: 7px;
     margin-bottom: 20px;
+}
+
+.main-logo {
+    display: block;
+    width: auto;
+    margin: 0 auto;
 }
 
 .trc-tabs-main {
@@ -39,21 +46,30 @@ h1 {
 .trc-tabs-main li a {
     cursor: pointer;
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.6);
+    background: #FFF;
+    color: #0223BF;
     font-size: 11pt;
-    font-family: "Rockstar", sans-serif;
-    padding: 10px 10px 7px 10px;
+    font-family: "Luba LT W04", sans-serif;
+    font-weight: bold;
+    padding: 8px 10px 10px 10px;
     transition: all 200ms ease-in-out;
 }
-.trc-tabs-main li a:hover { color: #d5fdff }
+
+.trc-tabs-main li a.inactive {
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFF;
+}
+.trc-tabs-main li a.inactive:hover { color: #d5fdff }
 
 .main-content {
     width: 100%;
     font-size: 11.5pt;
+    letter-spacing: -0.1px;
     line-height: 1.5em;
     animation: fadeEffect 1s;
 }
 
+.main-content .header-bg { border-radius: 12px; margin-bottom: 20px; overflow: hidden }
 .main-content ol { list-style: decimal }
 .main-content ol li { padding-left: 10px; margin-left: 15px }
 .main-content ol li + li { margin-top: 15px }
@@ -68,12 +84,12 @@ h1 {
 
 .main-content ul.expandable li .title:before,
 .main-content ul.expandable li .title:after { content: ""; position: absolute; display: block; background-color: #e6e7f0; transition: all 200ms ease-in }
-.main-content ul.expandable li .title:after { top: 11px; left: 0; width: 15px; height: 1px }
-.main-content ul.expandable li .title:before { top: 4px; left: 7px; width: 1px; height: 15px }
+.main-content ul.expandable li .title:after { top: 12px; left: 0; width: 15px; height: 1px }
+.main-content ul.expandable li .title:before { top: 5px; left: 7px; width: 1px; height: 15px }
 .main-content ul.expandable li .title.active { font-weight: bold }
 .main-content ul.expandable li .title.active:after { transform: rotate(45deg) }
 .main-content ul.expandable li .title.active:before { transform: rotate(45deg) }
-.main-content ul.expandable li .nested { display: none; background: rgba(0, 0, 0, 0.3); padding: 15px 20px; margin-top: 10px; animation: fadeEffect 1s }
+.main-content ul.expandable li .nested { display: none; border-radius: 8px; background: rgba(255, 255, 255, 0.1); padding: 15px 20px 19px 20px; margin-top: 10px; animation: fadeEffect 1s }
 
 .main-content ul.expandable li .nested .banned-words { margin-top: 10px }
 .main-content ul.expandable li .nested .banned-words span {
@@ -85,7 +101,7 @@ h1 {
     font-size: 11pt;
     font-weight: bold;
     line-height: 1em;
-    padding: 4px 10px;
+    padding: 3px 10px 5px 10px;
 }
 .main-content ul.expandable li .nested .banned-words span { margin: 8px 5px 0 0 }
 
@@ -97,9 +113,9 @@ h1 {
 .copyright {
     display: block;
     border-top: 1px solid #3d4465;
-    font-size: 9pt;
-    padding: 10px 0;
-    margin-top: 30px;
+    font-size: 9.5pt;
+    padding: 15px 0;
+    margin-top: 26px;
 }
 
 .copyright img { vertical-align: -55%; margin-right: 8px }
